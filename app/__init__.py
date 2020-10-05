@@ -36,19 +36,24 @@ def register_dashapps(app):
     )
 
     with app.app_context():
-        dashbelly.title = "Dashapp 1"
+        dashbelly.title = "Dash Belly"
         dashbelly.layout = layout
         register_callbacks(dashbelly)
 
-    _protect_dashviews(dashbelly)
+
+####
+#### Disabled for dev purposes.
+####
+
+#     _protect_dashviews(dashbelly)
 
 
-def _protect_dashviews(dashapp):
-    for view_func in dashapp.server.view_functions:
-        if view_func.startswith(dashapp.config.url_base_pathname):
-            dashapp.server.view_functions[view_func] = login_required(
-                dashapp.server.view_functions[view_func]
-            )
+# def _protect_dashviews(dashapp):
+#     for view_func in dashapp.server.view_functions:
+#         if view_func.startswith(dashapp.config.url_base_pathname):
+#             dashapp.server.view_functions[view_func] = login_required(
+#                 dashapp.server.view_functions[view_func]
+#             )
 
 
 def register_extensions(server):

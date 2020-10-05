@@ -1,8 +1,8 @@
 {
-  "name": "Dashapp on Flask",
+  "name": "Belly Graphs Dash",
   "description": "Embed your own Dash app into Flask and leverage its authentication layer.",
-  "keywords": ["Flask", "Dash", "Plotly"],
-  "repository": "https://github.com/okomarov/dash_on_flask",
+  "keywords": ["Flask", "Dash", "Plotly", "Bootstrap"],
+  "repository": "https://github.com/JovaniPink/belly-graphs-dash",
   "success_url": "/",
   "env": {
     "SECRET_KEY": {
