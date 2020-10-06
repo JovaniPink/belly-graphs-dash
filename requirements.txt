@@ -50,4 +50,4 @@ Werkzeug==0.16.0
 pandas==1.1.2
 numpy==1.19.2
 wrapt==1.11.2
-WTForms==2.2.1
+WTForms==2.3.3
